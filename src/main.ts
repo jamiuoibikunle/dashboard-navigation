@@ -23,12 +23,17 @@ class Navigation {
 
   start = () => {
     this.listeners();
+    this.attach();
   };
 
   listeners = () => {
     window.addEventListener("DOMContentLoaded", () => {
       this.update();
     });
+  };
+
+  attach = () => {
+    (window as any).navigation = this;
   };
 }
 
