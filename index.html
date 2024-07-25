@@ -8,34 +8,43 @@
     <title>Dashboard Navigation</title>
   </head>
   <body>
-    <div class="flex gap-5 h-full">
-      <section class="bg-neutral-200 m-3 p-3 w-xs rounded-md">
-        <div class="w-full flex items-center justify-between">
-          <h1>Pantha</h1>
-          <input type="image" src="/toggle.svg" class="h-6 w-6" />
+    <div class="flex gap-0 h-full">
+      <section
+        id="container"
+        class="relative bg-neutral-200 m-3 p-3 w-xs rounded-md overflow-hidden"
+      >
+        <div id="header" class="w-full flex items-center justify-between">
+          <h1 id="header-text" class="origin-top-left">Pantha</h1>
+          <input
+            id="toggle"
+            type="image"
+            src="/toggle.svg"
+            class="absolute m-auto h-6 w-6"
+            onclick="navigation.toggle()"
+          />
         </div>
         <div class="h-10"></div>
         <button
-          class="w-full flex gap-5 p-3 items-center bg-black/20 rounded-md mt-1"
+          class="w-full flex gap-7 p-3 items-center bg-black/20 rounded-md mt-1"
         >
           <input type="image" src="/home.svg" class="h-6 w-6" />
           <span class="font-semibold">Home</span>
         </button>
-        <button class="w-full flex gap-5 p-3 items-center rounded-md mt-1">
+        <button class="w-full flex gap-7 p-3 items-center rounded-md mt-1">
           <input type="image" src="/search.svg" class="h-6 w-6" />
           <span class="font-semibold text-black/50">Search</span>
         </button>
-        <button class="w-full flex gap-5 p-3 items-center rounded-md mt-1">
+        <button class="w-full flex gap-7 p-3 items-center rounded-md mt-1">
           <input type="image" src="/playlist.svg" class="h-6 w-6" />
           <span class="font-semibold text-black/50">Playlist</span>
         </button>
-        <button class="w-full flex gap-5 p-3 items-center rounded-md mt-1">
+        <button class="w-full flex gap-7 p-3 items-center rounded-md mt-1">
           <input type="image" src="/video.svg" class="h-6 w-6" />
           <span class="font-semibold text-black/50">Video</span>
         </button>
       </section>
-      <section class="flex-1"></section>
+      <section class="flex-1 bg-neutral-200 m-3 rounded-md"></section>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="text/javascript" src="/src/main.ts"></script>
   </body>
 </html>
