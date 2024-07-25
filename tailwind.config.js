@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       width: {
-        xs: "20rem",
-        sm: "24rem",
-        md: "28rem",
-        lg: "32rem",
-        xl: "36rem",
+        xs: "16rem",
+        sm: "20rem",
+        md: "24rem",
+        lg: "28rem",
+        xl: "32rem",
       },
       height: {
         full: "100dvh",
